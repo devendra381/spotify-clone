@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Clone | Web Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="hamburger">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <nav class="sidebar">
+        <div class="logo">
+          <i class="fab fa-spotify"></i> <span>Spotify</span>
+        </div>
+
+        <ul class="nav-links">
+          <li class="active">
+            <a href="#"><i class="fas fa-home"></i> <span>Home</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-search"></i> <span>Search</span></a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-book"></i> <span>Your Library</span></a
+            >
+          </li>
+        </ul>
+
+        <div class="sidebar-actions">
+          <button class="create-playlist">
+            <i class="fas fa-plus-square"></i> Create Playlist
+          </button>
+          <button class="liked-songs">
+            <i class="fas fa-heart"></i> Liked Songs
+          </button>
+        </div>
+        <hr />
+        <div class="playlist-scroll">
+          <p>My Rock Anthems</p>
+          <p>Focus Flow</p>
+          <p>Coding Beats</p>
+          <p>Chill Lo-Fi</p>
+          <p>Workout Mix</p>
+        </div>
+      </nav>
+
+      <main class="content">
+        <header class="top-header">
+          <div class="nav-arrows">
+            <i class="fas fa-chevron-left"></i>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="user-profile">
+            <button class="upgrade-btn">Upgrade</button>
+            <div class="profile-icon">
+              <i class="fas fa-user-circle"></i>
+              <span>Devendra dhaked</span>
+            </div>
+          </div>
+        </header>
+
+        <section class="display-section">
+          <h2>Made For You</h2>
+          <div class="card-grid">
+            <div class="card">
+              <img src="https://picsum.photos/id/237/200" alt="Album Art" />
+              <div class="play-btn"><i class="fas fa-play"></i></div>
+              <h4>Daily Mix 1</h4>
+              <p>Relaxing acoustic vibes for your morning.</p>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/id/10/200" alt="Album Art" />
+              <div class="play-btn"><i class="fas fa-play"></i></div>
+              <h4>Deep Focus</h4>
+              <p>Keep your head down and stay in the zone.</p>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/id/20/200" alt="Album Art" />
+              <div class="play-btn"><i class="fas fa-play"></i></div>
+              <h4>Mega Hit Mix</h4>
+              <p>The biggest tracks in the world right now.</p>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/id/50/200" alt="Album Art" />
+              <div class="play-btn"><i class="fas fa-play"></i></div>
+              <h4>Discover Weekly</h4>
+              <p>New music tailored just for you.</p>
+            </div>
+          </div>
+
+          <h2>Recently Played</h2>
+          <div class="card-grid">
+            <div class="card">
+              <img src="https://picsum.photos/id/60/200" alt="Album Art" />
+              <div class="play-btn"><i class="fas fa-play"></i></div>
+              <h4>Lo-Fi Beats</h4>
+              <p>Beats to study/relax to.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="player-bar">
+        <div class="now-playing">
+          <img src="https://picsum.photos/id/100/50" alt="Current Song" />
+          <div class="song-info">
+            <h5>Starboy</h5>
+            <p>The Weeknd</p>
+          </div>
+          <i class="far fa-heart"></i>
+        </div>
+
+        <div class="player-controls">
+          <div class="control-buttons">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="fas fa-play-circle main-play"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-redo"></i>
+          </div>
+          <div class="playback-bar">
+            <span>1:23</span>
+            <div class="progress-container">
+              <div class="progress-fill"></div>
+            </div>
+            <span>3:45</span>
+          </div>
+        </div>
+
+        <div class="volume-controls">
+          <i class="fas fa-list"></i>
+          <i class="fas fa-desktop"></i>
+          <i class="fas fa-volume-up"></i>
+          <div class="volume-slider">
+            <div class="volume-fill"></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
